@@ -16,9 +16,10 @@ function Boggle(){
     
     	// build the dictionary of words
 		var dictionary = new Array();
-		$.get("boggle/words.txt", function(data) {
-      		var items = data.split('\n');
-  		});
+		var file = event.target.file;
+ 		var reader = new FileReader();
+		var txt=reader.readAsText(file);
+		var items=txt.split(",");
   
 		// Do a jQuery Ajax request for the text dictionary
 $.get( "dict/dict.txt", function( txt ) {
