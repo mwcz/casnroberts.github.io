@@ -91,6 +91,15 @@ header h2 {
   min-height: 595px;
 }
 
+canvas{
+	width: 620px;
+	height: 620px;
+}
+
+#game {
+    background-color: #353535;
+}
+
 .inner {
   width: 620px;
   margin: 0 auto;
