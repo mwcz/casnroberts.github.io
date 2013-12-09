@@ -21,13 +21,6 @@ function set_board_size(){
   	board.length = dimension*dimension;
 }
 
-/*
-function open_new_window(URL){
-	NewWindow = window.open(URL,"_blank","toolbar=no,menubar=0,status=0,copyhistory=0,scrollbars=yes,resizable=1,location=0,Width=800,Height=600");
-	NewWindow.location = URL;
-}
-*/
-
 //Build the table with * to start
 function maketable(firsttime){
 	var s = '<table id="gametable" width="100%">';
@@ -289,6 +282,7 @@ board.length = dimension*dimension;
         <hr>
 
         <section id="main_content">
+        <div id="timeremaining" style="margin-bottom:10px; margin-top: 10px; text-align: center; font-size: 10pt;">/* Still working out the kinks */</div>
         <table>
 <tr>
 <td valign="top">
@@ -300,9 +294,9 @@ maketable(true);
 <table id="timetable">
 <tr><td id='bar_remaining'></td><td id='bar_elapsed'></td>
 </table>
-<div id="timeremaining" style="margin-bottom:10px; margin-top: 10px;">
-Time remaining: ...</div>
+<div id="timeremaining" style="margin-bottom:10px; margin-top: 10px;">Time remaining: ...</div>
 <input type="button" class="button" value="New game" onclick='newgame()'>
+<input type="text" class="answer" placeholder="Submit words here">
 <!--input type="button" class="button" value="Show solution" onclick='showsolution()'-->
         </section>
 
