@@ -207,17 +207,28 @@ a:hover { color: #2C5244; }
 }
 
 /* 404 PAGE */
+#main .bgtext {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 45vw;
+	margin-top: -6vw;
+	color: #D3D3D3;
+	padding: 0px;
+	line-height: 1em;
+}
 #main .content404 { 
+	position: relative;
 	display: block;
-	background: #BCB5A3;
-	width: 900px; 
-	height: 300px; 
-	margin: 100px auto;
+	width: 52vw; 
+	margin: 15vw auto;
 	padding: 20px;
-	border: 1px solid #BCB5A3;
+	
 }
 #main .content404 p {
-	font-size: 50px;
+	font-size: 4vw;
+	margin: 0;
+	padding: 0;
 }
 #main .content404 a {
 	float: right;
