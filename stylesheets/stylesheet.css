@@ -4,6 +4,16 @@
 	Date: 2014-02-25
 	------------------------------- */
 	
+/* ------ PALETTE ---------- 
+	http://www.colourlovers.com/palette/3268332/Kayaks
+	Header Nav, H2: 	#BCB5A3	- tan
+	H1,Blog Post Head:	#E94849 - salmon
+						#FDB455 - gold
+	Blog Post Head:		#BDE98F - light green
+	Project Post Head:  #2C5244 - dark green
+	General Text:		#6d6d6d - grey
+*/
+	
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, cite, code, img, b, u, i, center, dl, dt, dd, 
@@ -46,26 +56,40 @@ section, summary, audio, video {
 	font-style: bold;
 	font-stretch: ultra-expanded;
 }
+@font-face{
+	font-family: Overpass;
+	src: url(Overpass.ttf);
+	font-style: normal;
+	font-stretch: expanded;
+}
+@font-face{
+	font-family: handwritten;
+	src: url(Overpass_Bold.ttf);
+	font-style: bold;
+	font-stretch: expanded;
+}
+@font-face{
+	font-family: handwritten;
+	src: url(Overpass_Light.ttf);
+	font-style: lighter;
+	font-stretch: expanded;
+}
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-#footer, #header, hgroup, menu, nav, section {
-	display: block;
+*, *:after, *:before {
+	   -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+		    box-sizing: border-box;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -73,64 +97,143 @@ table {
 
 /* LAYOUT STYLES */
 body {
+  min-height: 595px;
   font-size: 2em;
   line-height: 1.5; 
   background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
-  font-family: handwritten, 'Helvetica Neue', Helvetica, Arial, serif;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  font-family: Overpass, 'Helvetica Neue', Helvetica, Arial, serif;
   color: #6d6d6d;
 }
 
-a { color: #d5000d; }
-a:hover { color: #c5000c; }
+a { color: #E94849; }
+a:hover { color: #2C5244; }
+
+#header, #content, #bio, #social{ 
+	position: relative;
+	float: left;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* HEADER */
+#header  { height: 200px; }
 
 #header h1 {
-  padding-top: 35px;
-  font-family: handwritten_sm,'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-weight: bold;
-  font-size: 75px;
-  color: #303030;
+	margin: 0px 0px 0px 30px;
+	font-family: handwritten_sm, Overpass, 'Helvetica Neue', Helvetica, Arial, serif; 
+	font-size: 100px;
+	line-height: 1em;
+	color: #E94849;
+	padding: 30px 0 10px 0;
 }
 
-#header h2 {
-  margin-top: -20px;
-  font-family: handwritten_sm, 'Chivo', 'Helvetica Neue', Arial;
-  letter-spacing: 1px;
-  font-size: 24px;
-  color: #aaa;
-  font-weight: normal;
+/* NAV */
+#header .nav a{ 
+	color: #6d6d6d; 
+	padding: 0px 20px 0 40px; 
 }
 
-#container {
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
-  min-height: 595px;
+#header .nav a:hover{ 
+	color: #2C5244; 
+	padding: 0px 20px 0 40px; 
 }
 
-#header .nav {
+/* GENERAL CONTENT-BOX FORMAT */
+#content-box {
+	overflow: hidden;
+	background: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	padding: 25px 10px 10px 10px;	
+	margin: 15px 10px 10px 30px;
+}
+
+#content-box:before{
+	box-sizing: border-box;	
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1px 10px 0;
+	color: white;
 }
 
-#main_content p{
-	color: #aaa;
-	font-size: 500%;
-	font-weight: bold;
+/* CONTENT */
+#content {}
+
+#content article {
+	font-size: 30%;
+	width: 500px;
+	height: 300px;
+	position: relative;
+	float: left;
+}
+
+.blog-post:before {
+	background: #FDB455;
+	content: "blog post";
+}
+
+.project-post:before {
+	background: #2C5244;
+	content: "project update";
+}
+
+/* SOCIAL */
+#social { width: 100%;}
+
+#social .bar {
+	width: 175px;
+	margin: 10px auto;
+	border-top:1px solid #6d6d6d;
+}
+
+#social .bar:before{
+	content: "";
+	background-color: #6d6d6d;
+    height: 1px;
+    display: block;
+    top: -1px;
+    position: relative;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	
+}
+
+#social img {
+	width: 25px;
+	margin-right: 2px;
+}
+
+/* 404 PAGE */
+#main .content404 { 
+	display: block;
+	background: #BCB5A3;
+	width: 900px; 
+	height: 300px; 
+	margin: 100px auto;
+	padding: 20px;
+	border: 1px solid #BCB5A3;
+}
+#main .content404 p {
+	font-size: 50px;
+}
+#main .content404 a {
+	float: right;
+	font-size: 20px;
+}
+
+.rounded-corners {
+	   -moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	 	    border-radius: 10px; /* future proofing */
+	 -khtml-border-radius: 10px; /* for old Konqueror browsers */
 }
 
 canvas{
 	width: 620px;
 	height: 620px;
-}
-
-.inner {
-  width: 620px;
-  margin: 0 auto;
-}
-
-
-#container .inner img {
-  max-width: 100%;
 }
 
 code, pre {
@@ -280,19 +383,6 @@ dl dt {
 	width: 25px;
 }
 
-/* MISC */
-.clearfix:after {
-  clear: both;
-  content: '.';
-  display: block;
-  visibility: hidden;
-  height: 0;
-}
-
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-
 /* #Media Queries
 ================================================== */
 
@@ -300,36 +390,18 @@ dl dt {
 @media only screen and (max-width: 959px) {}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.bio { display: none; }
+}
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-  .inner {
-    width: 94%;
-    margin: 0 auto;
-  }
-}
+@media only screen and (max-width: 767px) {}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 650px) {
-	  #main_content p{ 
-	  	line-height: 1em;
-	  	font-size: 250%; 
-	  }
-	  #header h1 {
-		padding-top: 5px;
-		font-size: 150%;
-	  }
-	  #header h2 {
-		margin-top: -10px;
-		font-size: 40%;
-	  }
-	  #header .nav {
-		position: relative;
-		top: -10px;
-		left: 2px;
-	  }
+@media only screen and (max-width: 561px) {
+	  #header { width: 500px; font-size: 60%; }
+	  #header h1 { font-size: 75px; }
 }
