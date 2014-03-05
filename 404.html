@@ -8,10 +8,12 @@
     <title>cas on code</title>
   </head>
 
-  <body>
-    <div id="main">     
-    	<span class="content404 rounded-corners">
-			<p>Well, this is embarrassing.  We can't seem to find the page!</p>
+	<![if !IE]> <body onresize="document.location=window.location;"> <![endif]>
+	<!--[if IE]> <body onresize="window.location.reload();"> <![endif]-->
+    <div id="main">
+	    <span class="bgtext">404</span>
+    	<span class="content404">
+			<p>Please pardon our mess...</p>
 			<a href="/">Back to casoncode.com</a>
     	</span>
     </div>

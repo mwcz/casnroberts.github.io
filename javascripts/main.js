@@ -1,1 +1,3 @@
-console.log('This would be the main JS file.');
+	$(window).resize(function() {
+	  window.location.href = window.location.href;
+	});
