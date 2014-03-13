@@ -185,8 +185,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 #social { width: 100%;}
 
 #social .bar {
-	width: 175px;
-	margin: 10px auto;
+	width: 150px;
+	margin: 50px auto;
 	border-top:1px solid #6d6d6d;
 }
 
@@ -204,6 +204,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 #social img {
 	width: 25px;
 	margin-right: 2px;
+}
+
+#social img:first {
+	margin-left: 5px;
 }
 
 /* 404 PAGE */
