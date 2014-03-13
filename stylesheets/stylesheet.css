@@ -117,7 +117,7 @@ a:hover { color: #2C5244; }
 }
 
 /* HEADER */
-#header  { height: 200px; }
+#header  { height: 200px; width: 100%; }
 
 #header h1 {
 	margin: 0px 0px 0px 30px;
