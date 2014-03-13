@@ -103,13 +103,14 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 table { border-collapse: collapse; border-spacing: 0; }
 
 #main { width: 60%; margin: 0 auto; }
-#content, #bio, #social{ 
+
+/* #content, #bio, #social{ 
 	position: relative;
 	float: left;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-		    box-sizing: border-box;         /* Opera/IE 8+ */
-}
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit 
+	   -moz-box-sizing: border-box;    /* Firefox, other Gecko 
+		    box-sizing: border-box;         /* Opera/IE 8+ 
+} */
 
 /* HEADER */
 #header  { /* height: 200px; */ margin: 0 auto;}
