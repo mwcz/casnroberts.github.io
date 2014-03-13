@@ -185,12 +185,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 #social { width: 100%;}
 
 #social .bar {
-	width: 190px;
+	width: 200px;
 	margin: 50px auto;
-	border-top:1px solid #6d6d6d;
+	/* border-top:1px solid #6d6d6d; */
 }
 
-#social .bar:before{
+/* #social .bar:before{
     content: "";
     background-color: #6d6d6d;
     height: 1px;
@@ -199,7 +199,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     position: relative;
     background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 	
-}
+}*/
 
 #social img {
 	width: 40px;
