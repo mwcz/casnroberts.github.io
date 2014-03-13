@@ -159,14 +159,15 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 
 /* CONTENT */
-#content {}
+#content { width: 100%; }
 
 #content article {
 	font-size: 30%;
 	width: 500px;
 	height: 300px;
 	position: relative;
-	float: left;
+	margin: 10px auto;
+	/* float: left; */
 }
 
 .blog-post:before {
