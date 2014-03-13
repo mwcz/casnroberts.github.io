@@ -112,7 +112,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 
 /* HEADER */
-#header  { height: 200px; margin: 0 auto;}
+#header  { /* height: 200px; */ margin: 0 auto;}
 
 #header h1 {
 	font-family: handwritten_sm, Overpass, 'Helvetica Neue', Helvetica, Arial, serif; 
