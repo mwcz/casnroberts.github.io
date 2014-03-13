@@ -185,7 +185,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 #social { width: 100%;}
 
 #social .bar {
-	width: 200px;
+	width: 245px;
 	margin: 50px auto;
 	/* border-top:1px solid #6d6d6d; */
 }
@@ -203,7 +203,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 #social img {
 	width: 40px;
-	margin-left: 5px;
+	margin-left: 10px;
 }
 
 /* 404 PAGE */
