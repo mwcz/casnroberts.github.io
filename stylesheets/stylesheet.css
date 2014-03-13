@@ -116,7 +116,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 #header h1 {
 	font-family: handwritten_sm, Overpass, 'Helvetica Neue', Helvetica, Arial, serif; 
-	font-size: 3em;
+	font-size: 12vw;
 	line-height: 1em;
 	text-align: center;
 	color: #E94849;
@@ -190,8 +190,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 
 #social .bar:before{
-	content: "";
-	background-color: #6d6d6d;
+    content: "";
+    background-color: #6d6d6d;
     height: 1px;
     display: block;
     top: -1px;
@@ -362,10 +362,6 @@ p {
  
 a {
   text-decoration: none;
-}
-
-p a {
-  font-weight: 400;
 }
 
 blockquote {
