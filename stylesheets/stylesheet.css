@@ -203,10 +203,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 #social img {
 	width: 25px;
-	margin-right: 2px;
-}
-
-#social a:first {
 	margin-left: 5px;
 }
 
