@@ -108,6 +108,7 @@ body {
 a { color: #E94849; }
 a:hover { color: #2C5244; }
 
+#main { width: 60%; margin: 0 auto; }
 #content, #bio, #social{ 
 	position: relative;
 	float: left;
@@ -117,7 +118,7 @@ a:hover { color: #2C5244; }
 }
 
 /* HEADER */
-#header  { height: 200px; width: 60%; margin: 0 auto; }
+#header  { height: 200px; margin: 0 auto;}
 
 #header h1 {
 	margin: 0px 0px 0px 30px;
