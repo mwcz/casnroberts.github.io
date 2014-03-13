@@ -206,7 +206,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	margin-right: 2px;
 }
 
-#social img:first {
+#social a:first {
 	margin-left: 5px;
 }
 
