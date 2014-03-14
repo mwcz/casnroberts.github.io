@@ -31,46 +31,46 @@ section, summary, audio, video {
 
 @font-face{
 	font-family: handwritten;
-	src: url(handwritten.ttf);
+	src: url(fonts/handwritten.ttf);
 	font-style: normal;
 	font-stretch: ultra-expanded;
 }
 
 @font-face:{
 	font-family: handwritten;
-	src: url(handwritten_bold.ttf);
+	src: url(fonts/handwritten_bold.ttf);
 	font-style: bold;
 	font-stretch: ultra-expanded;
 }
 
 @font-face{
 	font-family: handwritten_sm;
-	src: url(handwritten2.ttf);
+	src: url(fonts/handwritten2.ttf);
 	font-style: normal;
 	font-stretch: ultra-expanded;
 }
 
 @font-face:{
 	font-family: handwritten_sm;
-	src: url(handwritten2_bold.ttf);
+	src: url(fonts/handwritten2_bold.ttf);
 	font-style: bold;
 	font-stretch: ultra-expanded;
 }
 @font-face{
 	font-family: Overpass;
-	src: url(Overpass.ttf);
+	src: url(fonts/Overpass.ttf);
 	font-style: normal;
 	font-stretch: expanded;
 }
 @font-face{
 	font-family: handwritten;
-	src: url(Overpass_Bold.ttf);
+	src: url(fonts/Overpass_Bold.ttf);
 	font-style: bold;
 	font-stretch: expanded;
 }
 @font-face{
 	font-family: handwritten;
-	src: url(Overpass_Light.ttf);
+	src: url(fonts/Overpass_Light.ttf);
 	font-style: lighter;
 	font-stretch: expanded;
 }
