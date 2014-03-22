@@ -1,3 +1,3 @@
 [submodule "pearlhacks"]
 	path = pearlhacks
-	url = git@github.com:mwcz/pages.github.com.git
+	url = git://github.com:mwcz/pages.github.com.git
